@@ -263,7 +263,7 @@ fieldset {
 }
 
 .card {
-  margin: 10px; /* Add margin to create consistent spacing */
+  margin: 5px; /* Add margin to create consistent spacing */
   flex-basis: 22%; /* Adjust this value to set the width of each card */
   display: flex; /* Use flexbox to align items in the card */
   align-items: center;
@@ -273,13 +273,14 @@ fieldset {
   padding: 10px;
   transition: transform 0.3s ease;
   width: calc(25% - 20px);
+  border: 1px solid #ccc;
 }
 
 /* If you want to change the size of the song image inside the card */
 .card-image {
   margin-bottom: 5px;
-  width: 120px; /* Adjust the width to your preference */
-  height: 120px; /* Adjust the height to your preference */
+  width: 100px; /* Adjust the width to your preference */
+  height: 100px; /* Adjust the height to your preference */
   margin-right: 5px;
 }
 
@@ -292,26 +293,24 @@ fieldset {
 
 .card h2 {
   font-size: 1.2rem; /* Set your desired font size */
-  white-space: nowrap; /* Prevent the title from wrapping to multiple lines */
-  overflow: hidden; /* Hide any overflowing text */
-  text-overflow: ellipsis; /* Add ellipsis (...) to indicate truncated text */
-  height: 3rem; /* Set a fixed height for the title container */
+  margin: 5px 0;
 }
 
 .card div {
-  padding: 5px; /* Add some padding to separate the info */
+  padding: 5px 0; /* Add some padding to separate the info */
 }
 
 /* Display year and duration on separate lines */
 .card .info {
   padding: 5px; /* Add some padding to separate the info */
   text-align: right;
+  margin: 5px 0;
 }
 
 /* Display year and duration on separate lines */
 .card .year,
 .card .duration {
-  display: inline-block;
+  display: block;
   margin-right: 5px; /* Adjust the margin to your preference */
 }
 
