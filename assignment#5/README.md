@@ -1,6 +1,6 @@
 # WEB222
 
-## JavaScript
+## Assigment#5
 
 #### This assignment is designed to have you practice building more complex HTML and CSS layouts.  We will continue to iterate on your previous Assignment 4 Music App static and dynamic web content.
 
