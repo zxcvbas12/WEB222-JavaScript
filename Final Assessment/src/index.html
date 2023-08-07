@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StarCraft</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="body">
+    <header id="header">
+      <nav>
+        <ul id="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="info.html"><i class="fas fa-info-circle"></i>Info</a>
+          </li>
+          <li>
+            <a href="reviews.html"><i class="fas fa-star"></i>Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="logo">
+      <h1>1</h1>
+      <h1>1</h1>
+      <h1>1</h1>
+      <h1>1</h1>
+      <h1>1</h1>
+      <h1>1</h1>
+    </div>
+
+    <h2 id="first">Introduce</h2>
+    <div class="container">
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/MVbeoSPqRs4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="description">
+        <p>
+          <strong>StarCraft</strong> is an exciting strategy video game where
+          you take on the role of one of three unique factions: Terran (humans),
+          Zerg (alien bugs), or Protoss (advanced aliens). Each faction has its
+          own strengths and abilities, providing diverse gameplay experiences.
+          In the game, you'll gather resources like minerals and gas to build
+          bases and create powerful armies. Your goal is to outmaneuver and
+          outsmart your opponents in real-time battles, where quick
+          decision-making and tactical thinking are essential. The game offers
+          thrilling multiplayer matches, allowing you to compete against other
+          players from around the world. You can also explore engaging
+          single-player campaigns with captivating stories and challenging
+          missions. Whether you're a fan of action-packed battles or strategic
+          thinking, StarCraft offers an immersive and competitive gaming
+          experience that has captivated players for years. Join the fight for
+          galactic supremacy and prove your skills as a commander in this iconic
+          real-time strategy game!
+        </p>
+      </div>
+    </div>
+
+    <h4 class="des">THREE UNIQUE RACES</h4>
+    <h3 class="des">WHICH SIDE WILL YOU CHOOSE?</h3>
+
+    <div id="tabs">
+      <div id="tab1">
+        <button class="tab">Terran</button>
+      </div>
+
+      <div id="tab2">
+        <button class="tab">Zerg</button>
+      </div>
+
+      <div id="tab3">
+        <button class="tab">Protoss</button>
+      </div>
+    </div>
+
+    <div id="description">
+      <div id="terran-desc">
+        <img src="../src/img/terran.jpg" alt="terran" id="terran-img" />
+        <h3>
+          <em
+            >Resourceful humans with varied technology and plenty of
+            attitude.</em
+          >
+        </h3>
+        <p id="explain1">
+          Relative newcomers to the Koprulu sector, the terrans are the <br />
+          descendants of a disastrous colonization expedition launched <br />
+          from Earth centuries ago. With neither the advanced technology <br />
+          of the protoss nor the natural prowess of the zerg, terran military
+          forces <br />
+          rely on a varied mix of resilient, versatile units to outwit their
+          foes.
+        </p>
+      </div>
+
+      <div id="zerg-desc">
+        <img src="../src/img/zerg.jpg" alt="zerg" id="zerg-img" />
+        <h3>
+          <em>A ferocious swarm of merciless beasts that devour worlds.</em>
+        </h3>
+        <p id="explain2">
+          Led by the cunning Queen of Blades, the alien zerg are set to unleash
+          <br />
+          their horrors on the galaxy, consuming all who stand in their way. The
+          <br />
+          zerg make no use of technology to create their weapons, armor, or
+          <br />
+          starships. Instead, these functions are efficiently fulfilled through
+          <br />
+          biological adaptation and planned mutation.
+        </p>
+      </div>
+
+      <div id="protoss-desc">
+        <img src="../src/img/protoss.jpg" alt="protoss" id="protoss-img" />
+        <h3>
+          <em
+            >Ancient, noble warriors with a golden armada and advanced psionic
+            technology.</em
+          >
+        </h3>
+        <p id="explain3">
+          For thousands of years, the ancient and mysterious protoss have held
+          <br />
+          sway over their part of the galaxy. Individual protoss warriors are
+          <br />
+          unsurpassed in their skills and courage, greatly enhanced by the
+          <br />
+          combination of technology and formidable psionic strength.
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <form id="newsletter-form">
+          <a><label for="email">Join our Newsletter:</label></a>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="hidden" name="name" value="Ji Ho Nam" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+
+      <div id="end">
+        Made by <a href="./about.html" id="about">Ji Ho Nam</a> <br />&copy;
+        2023. &nbsp;ALL RIGHTS RESERVED
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const newsletterForm = document.getElementById("newsletter-form");
+        newsletterForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const emailInput = document.getElementById("email");
+          const emailValue = emailInput.value;
+
+          // Validate email format before submission
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(emailValue)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+
+          // Simulate form submission (in a real scenario, this would be sent to the server)
+          const formData = new FormData(newsletterForm);
+          fetch("https://httpbin.org/post", {
+            method: "POST",
+            body: formData,
+          })
+            .then((response) => {
+              if (response.ok) {
+                alert("You have successfully joined the newsletter!");
+              } else {
+                alert("Failed to join the newsletter. Please try again later.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error occurred during form submission:", error);
+              alert("Failed to join the newsletter. Please try again later.");
+            });
+        });
+      });
+    </script>
+  </body>
+</html>

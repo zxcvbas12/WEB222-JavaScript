@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Reviews</title>
+  </head>
+  <body id="body">
+    <header id="header">
+      <nav>
+        <ul id="nav-links">
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="info.html"><i class="fas fa-info-circle"></i>Info</a>
+          </li>
+          <li>
+            <a href="reviews.html"><i class="fas fa-star"></i>Reviews</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="reviews">Reviews</h2>
+      <div id="review-cards"></div>
+
+      <div class="add-review-container">
+        <h2>Add Review</h2>
+        <form id="add-review-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="date">Date:</label>
+          <input
+            type="text"
+            id="year"
+            name="year"
+            required
+            minlength="4"
+            maxlength="4"
+            placeholder="YYYY"
+          />
+          <input
+            type="text"
+            id="month"
+            name="month"
+            required
+            minlength="1"
+            maxlength="2"
+            min="1"
+            max="12"
+            placeholder="MM"
+          />
+          <input
+            type="text"
+            id="day"
+            name="day"
+            required
+            minlength="1"
+            maxlength="2"
+            placeholder="DD"
+          />
+
+          <label for="rating">Rating:</label>
+          <input
+            type="number"
+            id="rating"
+            name="rating"
+            min="1"
+            max="5"
+            required
+          />
+
+          <label for="review">Review:</label>
+          <textarea id="review" name="review" required></textarea>
+
+          <button type="submit">Add Review</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <form id="newsletter-form">
+          <a><label for="email">Join our Newsletter:</label></a>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            required
+          />
+          <input type="hidden" name="name" value="Ji Ho Nam" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+
+      <div id="end">
+        Made by <a href="./about.html" id="about">Ji Ho Nam</a> <br />&copy;
+        2023. &nbsp;ALL RIGHTS RESERVED
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+  </body>
+</html>
