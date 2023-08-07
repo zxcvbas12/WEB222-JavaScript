@@ -23,6 +23,11 @@
           <li>
             <a href="reviews.html"><i class="fas fa-star"></i>Reviews</a>
           </li>
+          <li>
+            <a href="about.html"
+              ><i class="fas fa-exclamation-triangle"></i>About</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -189,9 +194,14 @@
             method: "POST",
             body: formData,
           })
-            .then((response) => {
-              if (response.ok) {
-                alert("You have successfully joined the newsletter!");
+            .then((response) => response.json())
+            .then((data) => {
+              if (data) {
+                const submittedEmail = data.form.email;
+                const submittedName = data.form.name;
+                alert(
+                  `You have successfully joined the newsletter!\nEmail: ${submittedEmail}\nName: ${submittedName}`
+                );
               } else {
                 alert("Failed to join the newsletter. Please try again later.");
               }
