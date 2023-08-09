@@ -2,31 +2,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // add review data
   window.reviewData = [
     {
-      name: "John Doe",
+      name: "Michael Johnson",
       date: "2023-08-01",
       rating: 4,
       review: "Great game, lots of fun!",
     },
     {
-      name: "Jane Smith",
+      name: "Emily White",
       date: "2023-08-02",
       rating: 5,
       review: "Best strategy game I've ever played.",
     },
     {
-      name: "Mike Johnson",
+      name: "Sarah Miller",
       date: "2023-08-03",
       rating: 3,
       review: "The game is challenging but rewarding.",
     },
     {
-      name: "Emily Lee",
+      name: "Daniel Brown",
       date: "2023-08-04",
       rating: 5,
       review: "I love the diverse strategies each faction offers.",
     },
     {
-      name: "Alex Wang",
+      name: "Olivia Wang",
       date: "2023-08-05",
       rating: 4,
       review: "The competitive scene is intense and exciting.",
